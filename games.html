@@ -1,0 +1,78 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الألعاب التعليمية | طفلي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">🌸 طفلي</a>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="stories.html">القصص</a>
+      <a class="active" href="games.html">الألعاب</a>
+    </nav>
+  </header>
+
+  <main class="container inner-page">
+    <section class="page-hero games-hero">
+      <span class="big-emoji">🧩</span>
+      <span class="tag">وقت اللعب</span>
+      <h1>نلعب ونتعلم <span>حاجة جديدة</span></h1>
+      <p>ألعاب خفيفة تشغّل التفكير والخيال. مفيش خسارة، كل محاولة فرصة نتعلم.</p>
+    </section>
+
+    <div class="section-heading">
+      <h2>اختار لعبة</h2>
+      <p>جرّب على مهلك واستمتع.</p>
+    </div>
+
+    <div class="game-grid">
+      <article class="game-card">
+        <div class="game-art memory-art">🍓 🌙 ⭐ 🌈</div>
+        <div class="game-content">
+          <span class="tag">التركيز والذاكرة</span>
+          <h3>لعبة الذاكرة</h3>
+          <p>افتح الكروت وحاول تلاقي كل صورتين شبه بعض.</p>
+          <button class="button primary" id="showMemory">ابدأ اللعب ←</button>
+        </div>
+      </article>
+
+      <article class="game-card">
+        <div class="game-art colors-art">🔵 🟡 🟢 🩷</div>
+        <div class="game-content">
+          <span class="tag">الألوان والملاحظة</span>
+          <h3>اختار اللون</h3>
+          <p>اضغط على اللون المطلوب وشوف النتيجة.</p>
+          <button class="button primary" id="showColors">ابدأ اللعب ←</button>
+        </div>
+      </article>
+    </div>
+
+    <section class="play-panel" id="memoryPanel" hidden>
+      <h2>🧠 دور على كل زوج!</h2>
+      <p id="memoryMessage">اختار كارتين وركز في الصور.</p>
+      <div class="memory-board" id="memoryBoard"></div>
+      <button class="button secondary" id="resetMemory">العب تاني ↻</button>
+    </section>
+
+    <section class="play-panel" id="colorsPanel" hidden>
+      <h2>🎨 فين اللون ده؟</h2>
+      <p>دَوّر على اللون: <strong id="colorTarget"></strong></p>
+      <div class="color-board" id="colorBoard"></div>
+      <p id="colorMessage" aria-live="polite">اختار الدائرة الصح.</p>
+      <button class="button secondary" id="newColor">لون جديد ↻</button>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="index.html">🌸 طفلي</a>
+    <p>اللعب أحلى لما نتعلم سوا.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+```
